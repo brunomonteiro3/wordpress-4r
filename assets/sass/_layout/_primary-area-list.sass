@@ -1,0 +1,117 @@
+.primary-area
+	float: left
+	margin-bottom: 25px
+
+	.article-item
+		&__info
+			position: absolute
+			bottom: 20px
+			text-align: right
+			padding: 0 20px
+			right: 0
+
+		&__thumbnail
+			max-height: 250px
+			overflow: hidden
+
+			@media only screen and (max-width: 750px)
+				max-height: 100%
+
+		&__title
+			color: #FFF
+			font-weight: 500
+
+		&__category
+			left: auto
+			right: 20px
+			top: -25px
+
+	.featured-item
+		float: left
+		max-width: 610px
+		width: 100%
+
+		@media only screen and (max-width: 1335px)
+			max-width: 520px	
+
+		@media only screen and (max-width: 1190px)
+			max-width: 390px
+
+		@media only screen and (max-width: 1010px)
+			max-width: 100%
+
+			img
+				width: 100%
+
+		.article-item
+			&__thumbnail
+				max-height: 500px
+
+			&__title
+				font-size: 30px
+
+				@media only screen and (max-width: 750px)
+					font-size: 21px
+
+	.list-articles
+		float: left
+		max-width: 710px
+		width: 100%
+
+		@media only screen and (max-width: 1335px)	
+			max-width: 650px
+
+		@media only screen and (max-width: 1190px)
+			max-width: 600px
+
+		@media only screen and (max-width: 1010px)
+			max-width: 100%
+
+		.article-item
+			float: left
+			max-width: 355px
+			width: 100%
+
+			@media only screen and (max-width: 1335px)
+				max-width: 325px
+
+			@media only screen and (max-width: 1190px)
+				max-width: 300px
+
+			@media only screen and (max-width: 1010px)
+				max-width: 50%
+
+				img
+					width: 100%
+
+			@media only screen and (max-width: 750px)
+				max-width: 100%
+
+			&.sponsored
+				height: 250px
+				background: #222
+				text-align: center
+
+				@media only screen and (max-width: 750px)
+					background: #FFF
+
+				.advertising
+					position: relative
+
+					img
+						width: auto
+
+					&:after
+						content: 'Publicidade'
+						color: #FFF
+						font: 10px Arial
+						transform: rotate(-90deg)
+						text-transform: uppercase
+						bottom: 45px
+						right: -16px
+
+						@media only screen and (max-width: 1335px)	
+							right: -27px
+
+						@media only screen and (max-width: 750px)
+							color: #000

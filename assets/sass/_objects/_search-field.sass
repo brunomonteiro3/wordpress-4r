@@ -1,0 +1,27 @@
+.search-field
+	float: right
+	margin-top: 5px
+
+	@media only screen and (max-width: 1010px)
+		display: none
+	
+	&__input
+		text-transform: uppercase
+		font-size: 11px
+		max-width: 100px
+		width: 100%
+		padding: 0 15px
+		height: 35px
+		float: left
+
+		@media only screen and (max-width: 1190px)
+			max-width: 60px 
+
+	&__submit
+		background: url(../images/icons/search-icon.png) no-repeat center center #FFF
+		padding: 3px
+		text-indent: -9999em
+		border-radius: 0
+		cursor: pointer
+		width: 35px
+		height: 35px
