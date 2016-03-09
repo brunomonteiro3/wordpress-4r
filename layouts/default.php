@@ -8,7 +8,7 @@ the_component('components/head');
 	<main class="wrapper">
 		<?php
 			the_component('elements/header');
-	    	echo $args['content']; 
+			echo $args['content']; 
 	    ?>
 	</main>
 </body>
